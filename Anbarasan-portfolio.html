@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anbarasan K | Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Subtle fade/slide animation */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f6fc;
+      color: #1c1c1c;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+    .dark-mode {
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+    .dark-mode .navbar,
+    .dark-mode footer {
+      background-color: #161b22 !important;
+    }
+    .dark-mode .hero {
+      background: linear-gradient(135deg, #1c1c1c, #333333);
+    }
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
+      position: relative;
+      z-index: 1;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: inherit;
+      z-index: -1;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section {
+      padding: 60px 20px;
+      position: relative;
+    }
+    .section:nth-of-type(even) {
+      background-color: #ffffff;
+    }
+    .section:nth-of-type(odd) {
+      background-color: #f1f1f1;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+      background-color: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 60px;
+    }
+    .btn-primary {
+      background-color: #42a5f5;
+      border: none;
+    }
+    .dark-mode .section:nth-of-type(even),
+    .dark-mode .section:nth-of-type(odd) {
+      background-color: #0d1117;
+    }
+    .dark-mode .card {
+      background-color: #161b22;
+      color: #c9d1d9;
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+    }
+      @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#hero">Anbarasan K</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#personal">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-light" onclick="toggleDarkMode()">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <h1>Anbarasan K</h1>
+    <p class="lead">
+  <span id="typed"></span>
+</p>
+
+
+    <script>
+      new Typed('#typed', {
+        strings: ["Full Stack Developer", "Java & Python Programmer", "Creative Problem Solver"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
+    <p>Email: anbarasanpno18@gmail.com | Phone: 9787638123</p>
+    <a href="https://github.com/AnbarasanKumar" target="_blank" class="btn btn-light text-primary mt-2">View GitHub</a>
+    <a href="https://www.linkedin.com/in/anbarasan-kumar-ab2a40288" target="_blank" class="btn btn-light text-primary mt-2 ms-2">
+      <i class="bi bi-linkedin"></i> Visit LinkedIn
+    </a>
+    <a href="Anbarasan.K%20Resume%20(2).pdf" download class="btn btn-outline-light mt-3" onclick="alert('Your resume download will start shortly.')">📄 Download Resume</a>
+  </section>
+
+  <section class="section container" id="about">
+    <h2 class="text-center mb-4">About Me</h2>
+    <p class="text-center">A dedicated and quick-learning IT enthusiast, passionate about solving real-world problems using modern technologies. I specialize in full-stack development and machine learning integration for impactful solutions.</p>
+  </section>
+
+  <section class="section container" id="projects">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row g-4">
+  <div class="col-md-4">
+    <div class="card p-4" data-bs-toggle="modal" data-bs-target="#modalDrowsiness" style="cursor: pointer;">
+      <h5 class="text-primary">Drowsiness Detection</h5>
+<h6 class="text-muted">Real-time Alert System</h6>
+      <p>Uses deep learning to detect fatigue via facial cues, enhancing driver safety with real-time alerts.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-4" data-bs-toggle="modal" data-bs-target="#modalParental" style="cursor: pointer;">
+      <h5 class="text-primary">Parental Control (YOLO)</h5>
+<h6 class="text-muted">Content Blocking & Monitoring</h6>
+      <p>Blocks inappropriate content using YOLO object detection in real time and notifies parents instantly.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-4" data-bs-toggle="modal" data-bs-target="#modalEcommerce" style="cursor: pointer;">
+      <h5 class="text-primary">E-Commerce Backend</h5>
+<h6 class="text-muted">Spring Boot + MySQL APIs</h6>
+      <p>Built RESTful APIs and integrated Java Spring Boot with MySQL for scalable e-commerce functionality.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Drowsiness Detection Modal -->
+<div class="modal fade" id="modalDrowsiness" tabindex="-1" aria-labelledby="modalDrowsinessLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDrowsinessLabel">Drowsiness Detection</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This system uses deep learning to analyze live video feeds for signs of driver drowsiness—such as eye closure, head movement, and yawning. It triggers alerts (sound/vibration) to improve road safety.</p>
+        <p><strong>Technologies:</strong> Python, OpenCV, Deep Learning, Haarcascade</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Parental Control Modal -->
+<div class="modal fade" id="modalParental" tabindex="-1" aria-labelledby="modalParentalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalParentalLabel">Parental Control (YOLO)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Detects and blocks inappropriate content in real-time using the YOLO algorithm. Sends alerts to parents with screenshots and logs for safety monitoring.</p>
+        <p><strong>Technologies:</strong> Python, YOLOv5, Flask, Computer Vision</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E-Commerce Backend Modal -->
+<div class="modal fade" id="modalEcommerce" tabindex="-1" aria-labelledby="modalEcommerceLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEcommerceLabel">E-Commerce Backend</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Developed scalable backend architecture with REST APIs using Spring Boot. Managed product, user, and cart modules with MySQL and JPA. Ensured secure, efficient data handling.</p>
+        <p><strong>Technologies:</strong> Java, Spring Boot, MySQL, JPA/Hibernate</p>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+  <section class="section container" id="skills" style="animation: slideUp 1s ease-in-out;">
+  <h2 class="text-center mb-5">Technical Skills</h2>
+  <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+    <div class="col"><div class="card p-3 shadow-sm">Java</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">Python</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">HTML CSS JS</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">Spring Boot</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">Java Servlet</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">MySQL</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">JDBC</div></div>
+    <div class="col"><div class="card p-3 shadow-sm">Bootstrap</div></div>
+  </div>
+</section>
+
+  <section class="section container" id="education">
+  <h2 class="text-center mb-5">Education</h2>
+  <ul>
+    <li><strong>CK College of Engineering and Technology</strong> – B.E. CSE (84.1%)</li>
+    <li><strong>SEVAMANDIR Matric HR.SEC. School</strong> – 12th (67.5%), 10th (83.4%)</li>
+  </ul>
+</ul>
+</section>
+
+  <section class="section container" id="certifications">
+    <h2 class="text-center mb-4">Certifications & Awards</h2>
+    <ul>
+      <li>Elite + Silver in NPTEL “Programming in JAVA”</li>
+      <li>Project Expo – 3rd Prize for "Parental Control"</li>
+      <li>GUVI – Python & Java Basics</li>
+      <li>QSpiders – Full Stack & Testing</li>
+    </ul>
+  </section>
+
+  <section class="section container" id="personal">
+  <h2 class="text-center mb-4">Soft Skills & Languages</h2>
+  <ul>
+    <li>Adaptable, Team Worker, Quick Learner, Active Listener</li>
+    <li>Languages: Tamil (Native), English (Proficient)</li>
+  </ul>
+</section>
+
+  <footer>
+  <p class="mb-1">&copy; 2025 <strong>Anbarasan K</strong></p>
+  <p class="mb-2">🚀 Passionate Full Stack Developer | Java, Python, Spring Boot</p>
+  <div>
+    <a href="https://github.com/AnbarasanKumar" target="_blank" class="text-white me-3" >GitHub</a>
+    <a href="https://www.linkedin.com/in/anbarasan-kumar-ab2a40288" target="_blank" class="text-white me-3" >LinkedIn</a>
+    <a href="Anbarasan.K%20Resume%20(2).pdf" download class="text-white" onclick="alert('Your resume download will start shortly.')">Download Resume</a>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem("mode", document.body.classList.contains("dark-mode") ? "dark" : "light");
+}
+
+// Load saved theme
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("mode") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+  </script>
+
+</body>
+</html>
